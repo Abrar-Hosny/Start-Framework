@@ -1,8 +1,21 @@
 import React from 'react'
 import style from './Layout.module'
+import { Outlet } from 'react-router-dom'
+import Navbar from "../Navbar/Navbar"
+import Footer from "../Footer/Footer"
+
 
 export default function Layout() {
   return (
-    <div>Layout</div>
+<>
+<Navbar/>
+
+
+<Outlet/>
+<Footer/>
+
+
+</>
+
   )
 }
